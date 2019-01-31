@@ -12,7 +12,7 @@ author: Yavuz Azal, Arif Bozkurt, Benedikt Herbst, Vu Tuananh, Thaer Aldefai
 ---
 
 ## Abstract
-Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen wir, dass diese Resourcen der Erde endlich sind. Mittleweile verbauchen wir Menschn mehr Resourcen, als auf der Erde vorhanden sind. Dieser Verbrauch wird auch als ökologischer Fußabdruck bezeichnet. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten. 
+Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen wir, dass diese Resourcen der Erde endlich sind. Mittleweile verbauchen wir Menschn mehr Resourcen, als auf der Erde vorhanden sind. Dieser Verbrauch wird auch als ökologischer Fußabdruck bezeichnet. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten.
 
 ## Inhalt
 1. [Einführung](#Einführung)
