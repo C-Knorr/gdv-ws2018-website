@@ -44,7 +44,7 @@ Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen
 7. [Erkenntnisse](#Erkenntnisse)
 8. [Fazit](#Fazit)
 
-## Einführung
+## Einführung <a name="einfuehrung"/>
 In diesem Semester wurden als Thema die Sustainable Development Goals der UN behandelt. 
 Diese beinhalten 17 Ziele zur nachhaltigen Entwicklung, die von den Vereinten Nationen erreicht werden sollen. 
 Die Ziele sollen bei der Sicherung einer nachhaltigen Entwicklung auf ökonomischer, sozialer sowie ökologischer Ebene behilflich sein. Im Rahmen der Lehrveranstaltung Grundlagen der Datenvisualisierung, die von Prof. Dr. Till Nagel an der Hochschule Mannheim gehalten wurde, fand ein Visualisierungsprojekt statt. In diesem Projekt konzentrierten wir uns auf den ökologischen Fußabdruck, welches mehrere Sustainable Development Goals beninhaltete. Für die Visualisierung wurden die Daten der G20-Staaten herangezogen. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten. Die Differenz zwischen der Biokapazität und dem ökologischen Fußabdruck ergibt bei einem positiven Wert eine Reserve und bei einem negativen Wert ein Defizit. 
