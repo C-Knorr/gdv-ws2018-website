@@ -6,7 +6,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: footprint\Poster.jpg
+    title: footprint\TreemapperTotal.png
     caption: Poster
 author: Yavuz Azal, Arif Bozkurt, Benedikt Herbst, Vu Tuananh, Thaer Aldefai 
 ---
