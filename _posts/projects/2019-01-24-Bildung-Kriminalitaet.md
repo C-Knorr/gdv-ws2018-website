@@ -8,7 +8,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: gallery/Weltkarte.JPG
+    title: gallery/Weltkarte.jpg
     caption: "Unsere Webanwendung"
 author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
 
@@ -44,7 +44,7 @@ Unser Ziel lag darin, anhand der Bildungsinvestitionen der jeweiligen Länder un
 Die eingelesenen Daten werden in Pentaho (ETL Tool) verarbeitet. Zuerst mussten die Daten gefiltert und aufgeteilt werden, da nur die Primary,Secondary und Tertiary Abschlüsse für uns relevant waren. Dafür gab es 3 Filteroperationen, die jeweils auf die Spalte “Series” angewandt wurden.
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/UNDataSchritt1.JPG" />
+  <img src="{{ site.urlimg }}/gallery/UNDataSchritt1.jpg" />
   <figcaption>Bild:1</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Zuletzt werden die einzelnen Datenstreams (primary, secondary und tertiary educa
 - tertiary_ed_students.csv
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/UNDataSchritt2.JPG" />
+  <img src="{{ site.urlimg }}/gallery/UNDataSchritt2.jpg" />
   <figcaption>ETL-Pipeline Overview</figcaption>
 </figure>
 
@@ -156,7 +156,7 @@ companion object {
 Hier mussten die Daten zuerst gescraped werden. Hierfür nutzten wir die Chrome Extension ["WebScraper"](https://www.webscraper.io/). Sie ermöglicht auf schnelle zuverlässige Art und Weise statische Seiten zu scrapen. Hierfür werden sogenannte SiteMaps erstellt. Diese benötigen den Link, auf welchem die Daten zu finden sind und lassen sich per XPath oder über die Chrome Developer Tools per “Select” definieren. Wir nutzen hier vor allem die Funktion “Table Scraping”, bei der man nur die Struktur der Tabelle angibt, von welcher die Daten gespeichert werden sollen.
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Webscraping1.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Webscraping1.jpg" />
   <figcaption>Table Scraping</figcaption>
 </figure>
 
@@ -165,7 +165,7 @@ Dadurch war es innerhalb kürzester Zeit möglich, den entsprechenden Scraper zu
 Die exportierten Sitemaps werden alle im ETL-Tool Pentaho verarbeitet.
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Webscrapping2.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Webscrapping2.jpg" />
   <figcaption>ETL-Tool Pentaho</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ Da unser Webscraper automatisch die folgende Spalte in die CSV-Datei hinzufügt:
 “web_scraper_start_url”, welche über die Information in der URL enthält, aus welchem Jahr die Daten stammen, wird diese Spalte von uns in “year” umbenannt. Danach im Schritt “Replace URL” werden folgende Werte substituiert:
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Webscrapping3.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Webscrapping3.jpg" />
   <figcaption>Table Scraping</figcaption>
 </figure>
 
@@ -204,7 +204,7 @@ Auffälligkeiten gibt es in folgenden Ländern:
 Äthiopien:
 - Trotz insgesamt ansteigenden Bildungsausgaben steigt der Crime Index an.
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Ethiopia.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Ethiopia.jpg" />
   <figcaption></figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ Brasilien:
 Crime Index an.
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Brazil.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Brazil.jpg" />
   <figcaption></figcaption>
 </figure>
 
@@ -221,14 +221,14 @@ Honduras
 - Trotz Anstieg der Bildungsausgaben steigt der Crime Index an.
 
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Honduras.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Honduras.jpg" />
   <figcaption></figcaption>
 </figure>
 
 Afghanistan
 - Trotz unterschiedlichen Bildungsausgaben sinkt Crime Index kontinuierlich.
 <figure>
-  <img src="{{ site.urlimg }}/gallery/Afghanistan.JPG" />
+  <img src="{{ site.urlimg }}/gallery/Afghanistan.jpg" />
   <figcaption></figcaption>
 </figure>
 
