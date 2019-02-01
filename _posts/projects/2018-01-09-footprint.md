@@ -188,7 +188,7 @@ container.width = am4core.percent(100);
 container.height = am4core.percent(100);
 ```
 
-#### [Treemap](https://www.amcharts.com/docs/v4/chart-types/treemap/)
+#### [Treemap]  <a name="Treemap"/> (https://www.amcharts.com/docs/v4/chart-types/treemap/)
 Wir haben zuerst zwei Treemaps erstellt, wie auf der amchart-Webseite vorgeschrieben, und diese an den Container positioniert.
 
 ##### Biocapacity Treemap (treemapGreen)
