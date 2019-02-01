@@ -8,13 +8,10 @@ show_meta: false
 categories:
     - projects
 image:
-    title: meinProjekt/template-teaser.jpg
-    caption: Teaser
+    title: gallery/Weltkarte.JPG
+    caption: "Unsere Webanwendung"
 author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
 
-gallery:
-    - image_url: images\gallery\UNDataSchritt1.jpg
-      caption: Lorem ipsum
 ---
 
 ## Abstract
@@ -46,7 +43,10 @@ Unser Ziel lag darin, anhand der Bildungsinvestitionen der jeweiligen Länder un
 
 Die eingelesenen Daten werden in Pentaho (ETL Tool) verarbeitet. Zuerst mussten die Daten gefiltert und aufgeteilt werden, da nur die Primary,Secondary und Tertiary Abschlüsse für uns relevant waren. Dafür gab es 3 Filteroperationen, die jeweils auf die Spalte “Series” angewandt wurden.
 
-{% include gallery %}
+<figure>
+  <img src="{{ site.urlimg }}/gallery/UNDataSchritt1.JPG" />
+  <figcaption>Bild:1</figcaption>
+</figure>
 
 Jede Filteroperation hat die Spalte jeweils nach folgenden Texten durchsucht:
 - Students enrolled in primary education (thousands)
@@ -70,6 +70,12 @@ Zuletzt werden die einzelnen Datenstreams (primary, secondary und tertiary educa
 - primary_ed_students.csv
 - secondary_ed_students.csv
 - tertiary_ed_students.csv
+
+<figure>
+  <img src="{{ site.urlimg }}/gallery/UNDataSchritt2.JPG" />
+  <figcaption>ETL-Pipeline Overview</figcaption>
+</figure>
+
 
 
 #### Datenquelle Worldbank
@@ -149,19 +155,29 @@ companion object {
 
 Hier mussten die Daten zuerst gescraped werden. Hierfür nutzten wir die Chrome Extension ["WebScraper"](https://www.webscraper.io/). Sie ermöglicht auf schnelle zuverlässige Art und Weise statische Seiten zu scrapen. Hierfür werden sogenannte SiteMaps erstellt. Diese benötigen den Link, auf welchem die Daten zu finden sind und lassen sich per XPath oder über die Chrome Developer Tools per “Select” definieren. Wir nutzen hier vor allem die Funktion “Table Scraping”, bei der man nur die Struktur der Tabelle angibt, von welcher die Daten gespeichert werden sollen.
 
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Webscraping1.JPG" />
+  <figcaption>Table Scraping</figcaption>
+</figure>
+
 Dadurch war es innerhalb kürzester Zeit möglich, den entsprechenden Scraper zu erstellen und die Daten in ein CSV-Format zu exportieren.
 
 Die exportierten Sitemaps werden alle im ETL-Tool Pentaho verarbeitet.
 
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Webscrapping2.JPG" />
+  <figcaption>ETL-Tool Pentaho</figcaption>
+</figure>
+
 Da unser Webscraper automatisch die folgende Spalte in die CSV-Datei hinzufügt:
 “web_scraper_start_url”, welche über die Information in der URL enthält, aus welchem Jahr die Daten stammen, wird diese Spalte von uns in “year” umbenannt. Danach im Schritt “Replace URL” werden folgende Werte substituiert:
 
-Hier ist zu beachten, dass der URL-Builder von numbeo zwar “title=” als Parameter benutzt. Jedoch steht hier das Jahr, welches man auslesen möchte. Kurzfristig gab es zwischen 2014-2015 den Zusatz -Q1 für Quartal, dieser wurde danach jedoch wieder verworfen. Deshalb ist die zusätzliche Substituierung von “-Q1” vorhanden. Anschließend wird die bereinigte CSV-Datei erstellt.
-
 <figure>
-  <img src="{{ site.urlimg }}/meinProjekt/template-image1.jpg" />
-  <figcaption >Eine Bildbeschreibung</figcaption>
+  <img src="{{ site.urlimg }}/gallery/Webscrapping3.JPG" />
+  <figcaption>Table Scraping</figcaption>
 </figure>
+
+Hier ist zu beachten, dass der URL-Builder von numbeo zwar “title=” als Parameter benutzt. Jedoch steht hier das Jahr, welches man auslesen möchte. Kurzfristig gab es zwischen 2014-2015 den Zusatz -Q1 für Quartal, dieser wurde danach jedoch wieder verworfen. Deshalb ist die zusätzliche Substituierung von “-Q1” vorhanden. Anschließend wird die bereinigte CSV-Datei erstellt.
 
 ## Implementierung
 
@@ -177,7 +193,7 @@ Für die Visualisierung verwenden wir die Python Bibliothek Dash. Diese bietet e
 
 ## Das Ergebnis
 
-Unsere Webanwendung zeigt die Entwicklung der Bildungsinvestitionen und des Crime Index einzelner Länder. Sie ist in zwei Hälften geteilt (siehe Bild): Die obere Hälfte enthält eine Choroplethenkarte, die den Crime Index der einzelnen Länder visualisiert. In der unteren Hälfte sind drei Diagramme zu einem Land, das vorher in der Choroplethenkarte ausgewählt wurde, sichtbar. Alle Diagramme haben eine Zeitachse (in Jahren). Links ist ein Liniendiagramm zu sehen, das die Investitionen in Prozent (Anteil vom BIP) anzeigt. Mittig ist ein Slope Chart angeordnet, der die Anzahl (Angabe in Millionen) der Menschen mit dem entsprechenden Bildungsgrad (primary, secondary und tertiary) anzeigt. Rechts ist ein weiteres Liniendiagramm zum Crime Index angeordnet, um zusätzlich zur Choroplethenkarte die Entwicklung des Crime Index nachvollziehen zu können. Mittig zwischen den beiden Hälften ist ein Slider, mit dem das entsprechende Jahr für die Choroplethenkarte ausgewählt werden kann.
+Unsere Webanwendung zeigt die Entwicklung der Bildungsinvestitionen und des Crime Index einzelner Länder. Sie ist in zwei Hälften geteilt (siehe teaser): Die obere Hälfte enthält eine Choroplethenkarte, die den Crime Index der einzelnen Länder visualisiert. In der unteren Hälfte sind drei Diagramme zu einem Land, das vorher in der Choroplethenkarte ausgewählt wurde, sichtbar. Alle Diagramme haben eine Zeitachse (in Jahren). Links ist ein Liniendiagramm zu sehen, das die Investitionen in Prozent (Anteil vom BIP) anzeigt. Mittig ist ein Slope Chart angeordnet, der die Anzahl (Angabe in Millionen) der Menschen mit dem entsprechenden Bildungsgrad (primary, secondary und tertiary) anzeigt. Rechts ist ein weiteres Liniendiagramm zum Crime Index angeordnet, um zusätzlich zur Choroplethenkarte die Entwicklung des Crime Index nachvollziehen zu können. Mittig zwischen den beiden Hälften ist ein Slider, mit dem das entsprechende Jahr für die Choroplethenkarte ausgewählt werden kann.
 
 ### Erkenntnisse
 
@@ -187,16 +203,34 @@ Auffälligkeiten gibt es in folgenden Ländern:
 
 Äthiopien:
 - Trotz insgesamt ansteigenden Bildungsausgaben steigt der Crime Index an.
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Ethiopia.JPG" />
+  <figcaption></figcaption>
+</figure>
 
 Brasilien:
 - Hier stiegen die Bildungsausgaben kontinuierlich an, jedoch stieg zugleich der
 Crime Index an.
 
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Brazil.JPG" />
+  <figcaption></figcaption>
+</figure>
+
 Honduras
 - Trotz Anstieg der Bildungsausgaben steigt der Crime Index an.
 
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Honduras.JPG" />
+  <figcaption></figcaption>
+</figure>
+
 Afghanistan
 - Trotz unterschiedlichen Bildungsausgaben sinkt Crime Index kontinuierlich.
+<figure>
+  <img src="{{ site.urlimg }}/gallery/Afghanistan.JPG" />
+  <figcaption></figcaption>
+</figure>
 
 ### Verbesserungsvorschläge
 
