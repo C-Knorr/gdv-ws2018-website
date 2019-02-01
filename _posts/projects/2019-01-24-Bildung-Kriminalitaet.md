@@ -8,7 +8,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: gallery/Weltkarte.png
+    title: gallery/Webanwendung.png
     caption: "Unsere Webanwendung"
 author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
 
@@ -16,7 +16,7 @@ author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahme
 
 ## Abstract
 
-Thema unseres GDV-Projektes im Wintersemester 2018/2019 waren die 17 Ziele für nachhaltige Entwicklung, welche von den Vereinten Nationen (UN) ins Leben gerufen wurden, um nachhaltige Entwicklung auf ökonomischer, sozialer und ökologischer Ebene zu gewährleisten (Quelle?). Einige der sogenannten SDGs (= UN Sustainable Development Goals) sind Armut zu bekämpfen und für bessere Bildung sowie Gesundheit zu sorgen.
+Thema unseres GDV-Projektes im Wintersemester 2018/2019 waren die 17 Ziele für nachhaltige Entwicklung, welche von den Vereinten Nationen (UN) ins Leben gerufen wurden, um nachhaltige Entwicklung auf ökonomischer, sozialer und ökologischer Ebene zu gewährleisten. Einige der sogenannten SDGs (= UN Sustainable Development Goals) sind Armut zu bekämpfen und für bessere Bildung sowie Gesundheit zu sorgen.
 
 ## Unser Konzept
 
@@ -147,7 +147,7 @@ companion object {
 
 Hier mussten die Daten zuerst gescraped werden. Hierfür nutzten wir die Chrome Extension ["WebScraper"](https://www.webscraper.io/). Sie ermöglicht auf schnelle zuverlässige Art und Weise statische Seiten zu scrapen. Hierfür werden sogenannte SiteMaps erstellt. Diese benötigen den Link, auf welchem die Daten zu finden sind und lassen sich per XPath oder über die Chrome Developer Tools per “Select” definieren. Wir nutzen hier vor allem die Funktion “Table Scraping”, bei der man nur die Struktur der Tabelle angibt, von welcher die Daten gespeichert werden sollen.
 
-![image]({{ site.urlimg }}gallery/Webscrapping1.png)*table Scraping*
+![image]({{ site.urlimg }}gallery/Webscraping1.png)*table Scraping*
 
 Dadurch war es innerhalb kürzester Zeit möglich, den entsprechenden Scraper zu erstellen und die Daten in ein CSV-Format zu exportieren.
 
@@ -158,7 +158,7 @@ Die exportierten Sitemaps werden alle im ETL-Tool Pentaho verarbeitet.
 Da unser Webscraper automatisch die folgende Spalte in die CSV-Datei hinzufügt:
 “web_scraper_start_url”, welche über die Information in der URL enthält, aus welchem Jahr die Daten stammen, wird diese Spalte von uns in “year” umbenannt. Danach im Schritt “Replace URL” werden folgende Werte substituiert:
 
-![image]({{ site.urlimg }}gallery/Webscrapping3.png)**
+![image]({{ site.urlimg }}gallery/Webscrapping3.png)*Substitution*
 
 Hier ist zu beachten, dass der URL-Builder von numbeo zwar “title=” als Parameter benutzt. Jedoch steht hier das Jahr, welches man auslesen möchte. Kurzfristig gab es zwischen 2014-2015 den Zusatz -Q1 für Quartal, dieser wurde danach jedoch wieder verworfen. Deshalb ist die zusätzliche Substituierung von “-Q1” vorhanden. Anschließend wird die bereinigte CSV-Datei erstellt.
 
@@ -176,7 +176,9 @@ Für die Visualisierung verwenden wir die Python Bibliothek Dash. Diese bietet e
 
 ## Das Ergebnis
 
-Unsere Webanwendung zeigt die Entwicklung der Bildungsinvestitionen und des Crime Index einzelner Länder. Sie ist in zwei Hälften geteilt (siehe teaser): Die obere Hälfte enthält eine Choroplethenkarte, die den Crime Index der einzelnen Länder visualisiert. In der unteren Hälfte sind drei Diagramme zu einem Land, das vorher in der Choroplethenkarte ausgewählt wurde, sichtbar. Alle Diagramme haben eine Zeitachse (in Jahren). Links ist ein Liniendiagramm zu sehen, das die Investitionen in Prozent (Anteil vom BIP) anzeigt. Mittig ist ein Slope Chart angeordnet, der die Anzahl (Angabe in Millionen) der Menschen mit dem entsprechenden Bildungsgrad (primary, secondary und tertiary) anzeigt. Rechts ist ein weiteres Liniendiagramm zum Crime Index angeordnet, um zusätzlich zur Choroplethenkarte die Entwicklung des Crime Index nachvollziehen zu können. Mittig zwischen den beiden Hälften ist ein Slider, mit dem das entsprechende Jahr für die Choroplethenkarte ausgewählt werden kann.
+Unsere Webanwendung zeigt die Entwicklung der Bildungsinvestitionen und des Crime Index einzelner Länder. Sie ist in zwei Hälften geteilt (siehe Abbildung: Webanwendung) Die obere Hälfte enthält eine Choroplethenkarte, die den Crime Index der einzelnen Länder visualisiert. In der unteren Hälfte sind drei Diagramme zu einem Land, das vorher in der Choroplethenkarte ausgewählt wurde, sichtbar. Alle Diagramme haben eine Zeitachse (in Jahren). Links ist ein Liniendiagramm zu sehen, das die Investitionen in Prozent (Anteil vom BIP) anzeigt. Mittig ist ein Slope Chart angeordnet, der die Anzahl (Angabe in Millionen) der Menschen mit dem entsprechenden Bildungsgrad (primary, secondary und tertiary) anzeigt. Rechts ist ein weiteres Liniendiagramm zum Crime Index angeordnet, um zusätzlich zur Choroplethenkarte die Entwicklung des Crime Index nachvollziehen zu können. Mittig zwischen den beiden Hälften ist ein Slider, mit dem das entsprechende Jahr für die Choroplethenkarte ausgewählt werden kann.
+
+![image]({{ site.urlimg }}gallery/Webanwendung.png)*Webanwendung*
 
 ### Erkenntnisse
 
@@ -187,23 +189,19 @@ Auffälligkeiten gibt es in folgenden Ländern:
 Äthiopien:
 - Trotz insgesamt ansteigenden Bildungsausgaben steigt der Crime Index an.
 
-![image]({{ site.urlimg }}gallery/Ethiopia.png)*Bildungsausgaben und Crime index*
+![image]({{ site.urlimg }}gallery/Ethiopia.png)*Äthiopien: Bildungsausgaben und Crime index*
 
 Brasilien:
 - Hier stiegen die Bildungsausgaben kontinuierlich an, jedoch stieg zugleich der
 Crime Index an.
 
-![image]({{ site.urlimg }}gallery/Brazil.png)*Bildungsausgaben und Crime index*
+![image]({{ site.urlimg }}gallery/Brazil.png)*Brasilien: Bildungsausgaben und Crime index*
 
-Honduras
-- Trotz Anstieg der Bildungsausgaben steigt der Crime Index an.
-
-![image]({{ site.urlimg }}gallery/Honduras.png)*Bildungsausgaben und Crime index*
 
 Afghanistan
 - Trotz unterschiedlichen Bildungsausgaben sinkt Crime Index kontinuierlich.
 
-![image]({{ site.urlimg }}gallery/Afghanistan.png)*Bildungsausgaben und Crime index*
+![image]({{ site.urlimg }}gallery/Afghanistan.png)*Afghanistan: Bildungsausgaben und Crime index*
 
 
 ### Verbesserungsvorschläge
