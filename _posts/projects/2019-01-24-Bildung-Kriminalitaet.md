@@ -181,7 +181,7 @@ Unsere Webanwendung zeigt die Entwicklung der Bildungsinvestitionen und des Crim
 
 ### Erkenntnisse
 
-Im Allgemeinen lässt sich zusammenfassen, dass es keinen erkennbaren Zusammenhang zwischen der Kriminalitätsrate und den Bildungsausgaben gibt. Es ist sogar zu beobachten, dass in manchen Ländern trotz Anstieg der Bildungsinvestitionen der Crime Index auch rapide ansteigt wie z.b. in Brasilien.
+Im Allgemeinen lässt sich zusammenfassen, dass es keinen erkennbaren Zusammenhang zwischen der Kriminalitätsrate und den Bildungsausgaben gibt. Es ist sogar zu beobachten, dass in manchen Ländern trotz Anstieg der Bildungsinvestitionen der Crime Index auch rapide ansteigt.
 
 Auffälligkeiten gibt es in folgenden Ländern:
 
@@ -207,20 +207,21 @@ Afghanistan
 
 In folgenden Punkten sind Verbesserungsvorschläge bezüglich unserer Webanwendung, die wir während der iExpo bekommen haben:
 
+- eine Snackbar, in welcher der Benutzer beim öffnen der Anwendung eine Einführung bekommt
 - Ausgewählte Länder sollten auf der Karte angezeigt und farblich hervorgehoben oder umrandet werden
 - Nicht ausgewählte Länder ausgrauen
 - Intuitivere Möglichkeit, um ein Land statt zwei auszuwählen
 - Stärkere Markierung der ausgewählten Länder in der Überschrift der Line Charts  
 
+
 ## Fazit
 
 Unsere Vermutung, dass steigende Investition in Bildung weniger Kriminalität zur Folge haben würde, hat sich nicht bewahrheitet.
 Unsere Annahme: Um Kriminalität effizient entgegenzuwirken, sind Maßnahmen gegen beispielsweise Drogenkriege in Brasilien notwendig. Solche Maßnahmen oder Faktoren wären somit höher priorisiert als der Faktor Bildung, um nachhaltige Ergebnisse zu erzielen.
-Ebenso vermuten wir, dass Investitionen in Bildung keine erkennbaren Auswirkungen von heute auf morgen haben können, da Bildung und ihre erhofften positiven Ergebnisse einige Jahre beanspruchen können. 
+Ebenso vermuten wir, dass Investitionen in Bildung keine erkennbaren Auswirkungen von heute auf morgen haben können, da Bildung und ihre erhofften positiven Ergebnisse einige Jahre beanspruchen können.
 
 ###### Credits
 
 - Studenten: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
 - Kurs: Grundlagen der Datenvisualiserung Wintersemester 2018/2019
 - Dozent: Prof. Dr. Till Nagel, Hochschule Mannheim
-
