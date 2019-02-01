@@ -177,7 +177,7 @@ Das Dashboard wurde mit [`JavaScript`](https://www.javascript.com) geschrieben u
 Alle Daten waren in ein JSON-Objekt namens data.json gespeichert. Problematisch war es, dieses JSON-Objekt anzubinden bzw. zu filtern. Es war zeitaufwendig herauszufinden, wie man die data.json filtert, um diese an den Charts anzubinden, da die data.json sehr groß und komplex war.<br>
 Die Library [`lodash`](https://lodash.com) bietet einige Hilfsfunktionen, um die data.json zu filtern. Es war am Ende mehr Filter-Code (<span style="color:gray">260 Liniecode</span>) als Dashboard-Code (<span style="color:gray">180 Liniecode</span>). Es wäre einfacher, für jedes Chart eine separate JSON-Datei mit den jeweiligen Daten zu haben.
 
-#### [container] <a name="container"/>  (https://www.amcharts.com/docs/v4/concepts/svg-engine/containers/)
+#### [container] <a name="container"/> 
 Es empfehlt sich ein amChart-Container zu erstellen, um alle Charts zu erstellen und eine Dashboard-Sicht zu generieren, damit eine bessere Übersicht für die Interaktion zwischen den Charts dargestellt werden kann. Änderungen in HTML oder CSS, um das Dashboard anzupassen bzw. zu ändern, sind nicht mehr notwendig. <br>
 Die Treemaps sind unterschiedlich groß, weil diese sich an den Zahlen sich orientieren. Je größer die Zahlen, desto größer die Treemap.
 
@@ -188,10 +188,10 @@ container.width = am4core.percent(100);
 container.height = am4core.percent(100);
 ```
 
-#### [Treemap]  <a name="Treemap"/> (https://www.amcharts.com/docs/v4/chart-types/treemap/)
+#### [Treemap]  <a name="Treemap"/>
 Wir haben zuerst zwei Treemaps erstellt, wie auf der amchart-Webseite vorgeschrieben, und diese an den Container positioniert.
 
-##### Biokapazität Treemap <a name="Biokapazität Treemap"/> (treemapGreen)
+##### Biokapazität Treemap <a name="Biokapazität Treemap"/>
 In dieser Treemap haben wir einen sogenannten Simple-Treemap erstellt, um die Biokapazität und den Key zu definieren, um diese später an das data.json zu verknüpfen.
 
 ```javascript
@@ -212,7 +212,7 @@ var treemapGreen = container.createChild(am4charts.TreeMap);
 
 
 
-##### Ökologischer Fußabdruck Treemap <a name="Ökologischer Fußabdruck Treemap"/> (treemapRed)
+##### Ökologischer Fußabdruck Treemap <a name="Ökologischer Fußabdruck Treemap"/> 
 Hier würde eine Drill-Down-Treemap erstellt. Damit kann man auf ein Land klicken, um die dazugehörigen Children-Daten anzugzeigen. Die Children-Daten stellen hier die spezifischen Daten eines Landes dar. Beim Klicken auf ein Land werden die spezifischen Daten dargestellt.
 
 ```javascript
@@ -264,7 +264,7 @@ Dieser Code ist für den Schwebeeffekt über die Treemaps zuständig. Hier war e
         return am4core.color(am4core.colors.brighten(fill.rgb, -0.2));
     });
 ```
-#### [XYChart] <a name="XYChart"/> (https://www.amcharts.com/docs/v4/chart-types/xy-chart/)
+#### [XYChart] <a name="XYChart"/>
 Dieser Chart ist etwas übersichtlicher als das Treemap und ist besser dokumentiert.
 ```javascript
     var chart = container.createChild(am4charts.XYChart);
@@ -276,7 +276,7 @@ Dieser Chart ist etwas übersichtlicher als das Treemap und ist besser dokumenti
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis.tooltip.disabled = true;
 ```
-##### [series] <a name="series"/> (https://www.amcharts.com/docs/v4/concepts/series/)
+##### [series] <a name="series"/>
 Hier wird das Verlauf der Zeitlinie erstellt.<br>
 <br>
 Biocapacity linie
@@ -320,7 +320,7 @@ Darstellung und Feature anpassung.
 ![axes]({{site.urlimg}}footprint/selectAxesZoom.png)
 
 
-##### [Legende] <a name="Legende"/> (https://www.amcharts.com/docs/v4/concepts/legend/)
+##### [Legende] <a name="Legende"/>
 Die Legende funktioniert nur bei Simple-Treemap und XYChart. Bei der Drill-Down Treemap kam es zu einigen UI-Fehlern. Es wurde nur in dem XYChart verwendet, da es in der Treemap nicht notwendig ist.
 ```javascript
 //zeige legende
@@ -339,7 +339,7 @@ Ein schöner Effekt bei Legenden, dass man es auch als Filter benutzen kann.<br>
 
 
 
-#### [Events] <a name="Events"/> (https://www.amcharts.com/docs/v4/concepts/event-listeners/)
+#### [Events] <a name="Events"/>
 Wir haben leider sehr wenige interaktive Funktionen für unseren Treemaps gefunden. In Chrome-Debugger haben wir eine Methode gefunden, die den Namen des Zustandes liefert, welche momentan anzeigt wird.
 
 ```
