@@ -85,7 +85,7 @@ Mit der Interaktiontechnik „Mouseover“ wird das ausgewählte Land in alle Vi
 
 **Ökologischer Fußabdruck der G20-Staaten**
 
-![]({{site.urlimg}}footprint/footprint/TreemapperTotal.PNG)
+![]({{site.urlimg}}footprint/TreemapperTotal.PNG)
 
 **Ökologischer Fußabdruck pro Kopf G20-Staaten**
 
