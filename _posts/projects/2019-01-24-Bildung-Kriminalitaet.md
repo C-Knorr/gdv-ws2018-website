@@ -8,7 +8,7 @@ show_meta: false
 categories:
     - projects
 image:
-    title: gallery/Weltkarte.jpg
+    title: gallery/Weltkarte.png
     caption: "Unsere Webanwendung"
 author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
 
@@ -43,10 +43,7 @@ Unser Ziel lag darin, anhand der Bildungsinvestitionen der jeweiligen Länder un
 
 Die eingelesenen Daten werden in Pentaho (ETL Tool) verarbeitet. Zuerst mussten die Daten gefiltert und aufgeteilt werden, da nur die Primary,Secondary und Tertiary Abschlüsse für uns relevant waren. Dafür gab es 3 Filteroperationen, die jeweils auf die Spalte “Series” angewandt wurden.
 
-<figure>
-  <img src="{{ site.urlimg }}/gallery/UNDataSchritt1.jpg" />
-  <figcaption>Bild:1</figcaption>
-</figure>
+![image]({{ site.urlimg }}gallery/UNDataSchritt1.jpg)*Bild:1*
 
 Jede Filteroperation hat die Spalte jeweils nach folgenden Texten durchsucht:
 - Students enrolled in primary education (thousands)
