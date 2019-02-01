@@ -68,12 +68,7 @@ Zuletzt werden die einzelnen Datenstreams (primary, secondary und tertiary educa
 - secondary_ed_students.csv
 - tertiary_ed_students.csv
 
-<figure>
-  <img src="{{ site.urlimg }}/gallery/UNDataSchritt2.jpg" />
-  <figcaption>ETL-Pipeline Overview</figcaption>
-</figure>
-
-
+![image]({{ site.urlimg }}gallery/UNDataSchritt2.png)*Bild:1*
 
 #### Datenquelle Worldbank
 
