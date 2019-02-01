@@ -10,7 +10,7 @@ categories:
 image:
     title: inequality/key_visual.jpeg
     caption: Zusammenstellung der Erkenntnisse als Poster für die iExpo
-author: Daniel Kogan, Moritz Mundhenke, Patrick Lowinski-Loh, Stefan Sousa & Tim Schäfer
+author: Daniel Kogan, Moritz Mundhenke, Patrick Lowinski-Loh, Stefan Sousa & Tim Schäfer, TODO mit oder ohne?
 ---
 
 > *Die Wirtschaft wächst und wächst, aber der Spalt zwischen Arm und Reich wird nicht kleiner. Was läuft da schief?* [^fn1]
@@ -24,7 +24,7 @@ Im Rahmen eines studentischen Projekts an der [Hochschule Mannheim](https://www.
 ---
 
 # Inhalt
-1. [Einführung](#einführung)
+1. [Einführung](#einfuehrung)
 2. [Motivation und Konzept](#motivation)
 3. [Hypothesen](#hypothesen)
 4. [Daten](#daten)  
@@ -32,12 +32,13 @@ Im Rahmen eines studentischen Projekts an der [Hochschule Mannheim](https://www.
 	4.2. [Datenanalyse](#datenanalyse)  
 	4.3. [Datenaufbereitung](#datenaufbereitung)  
 5. [Prototyp](#prototyp)
-6. [Fazit](#fazit)
-7. [Ausblick](#ausblick)
+6. [Fazit](#fazit)  
+	6.1. [Erkenntnisse](#erkenntnisse)  
+	6.2. [Ausblick](#ausblick)  
 
 ---
 
-## Einführung <a name="einführung"/>
+## Einführung <a name="einfuehrung"/>
 
 Dieses Projekt ist im Rahmen des Moduls *Grundlagen der Informationsvisualisierung (GDV)* durchgeführt worden. Die Lehrveranstaltung steht allen Studenten eines [Informatik](https://www.informatik.hs-mannheim.de/){:target="_blank"}-Studiengangs als Wahlpflichtfach zur Verfügung. Nach einer Auseinandersetzung mit den Grundkonzepten und Methoden der Informationsvisualisierung ist es in der zweiten Hälfte des Semesters üblich, dass sich die Studierenden in Gruppen mit einem Themengebiet auseinandersetzen und gemeinsam darauf basierend ein Visualisierungsprojekt erarbeiten. Das Thema wird durch den Dozenten Herrn [Prof. Dr. Till Nagel](https://services.informatik.hs-mannheim.de/~nagel/){:target="_blank"} vorgegeben. In diesem  Semester (Wintersemester 2018/2019) bildeten die sogenannten  
 "[Sustainable Development Goals](https://www.un.org/sustainabledevelopment/sustainable-development-goals/){:target="_blank"}" der Vereinten Nationen den Themenschwerpunkt. Dabei handelt es sich um 17 von der UNO definierten Ziele zur nachhaltigen Entwicklung der Welt auf wirtschaftlicher, sozialer und ökologischer Ebene, beispielsweise **Kein Hunger**, **Klimaschutz**, oder **Gute Bildung**.
@@ -45,7 +46,9 @@ Dieses Projekt ist im Rahmen des Moduls *Grundlagen der Informationsvisualisieru
 <br/>
   
 <figure>
-  <img src="{{ site.urlimg }}/inequality/sustainable_development_goals.png" />
+	<a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">
+  		<img src="{{ site.urlimg }}/inequality/sustainable_development_goals.png" />
+  	</a>
   <figcaption>17 Sustainable Development Goals</figcaption>
 </figure>
 
@@ -59,7 +62,7 @@ Zu einem oder mehreren dieser SDGs sollen die Studierenden Daten aus verschieden
 Um dieses weite Themenspektrum systematisch anzugehen, bestand der erste Schritt logischerweise darin, sich mit den einzelnen SDGs auseinanderzusetzen um einen Überblick zu gewinnen. Relativ schnell gab es im Projektteam einen Konsens darüber sich mit einem wirtschaftlichen Thema zu befassen. Insbesondere war der Schwerpunkt "Arm und Reich" von besonderem Interesse, da in den Medien immer wieder die auseinandergehende Schere zwischen Arm und Reich thematisiert wird. Aus diesem Grund wurden die SDGs [Menschenwürdige Arbeit und Wirtschaftswachstum](https://www.un.org/sustainabledevelopment/economic-growth/){:target="_blank"} (Decent work and economic growth, #8) und [Verringerung der Ungleichheit](https://www.un.org/sustainabledevelopment/inequality/){:target="_blank"} (Reduced inequalities, #10) für dieses Projekt ausgewählt. Aus der Überlegung heraus, dass von einer sich entwickelnden und wachsenden Wirtschaft in einem Land die gesamte Bevölkerung davon profitieren sollte, wurden erste Gedanken für eine Hypothese abgeleitet. Parallel dazu wurden erste Ideen und Konzepte für die Endanwendung als Paper-Prototype festgehalten.  
 
 <figure>
-  <img src="{{ site.urlimg }}/inequality/gdp_growth_inequality.png" />
+  <img src="{{ site.urlimg }}/inequality/scribble_gdp_growth_inequality.png" />
   <figcaption>Erste Ideen in Form eines Paper-Prototypes</figcaption>
 </figure>
 
@@ -83,41 +86,38 @@ Für die Hypothese standen zwei Dimensionen der [Human Development Data](http://
 - **Inequality**  
 - **Income/Composition of resources**  
 
-Für die Beschreibung der Ungleichheit in einem Land wurde der **Coefficient of Human Inequality** herangezogen. Diese künstlich berechnete Kennzahl setzt sich aus den Ungleichheiten in den Bereichen *Gesundheit*, *Bildung* und *Einkommen* zusammen. Als Kennzahl für die wirtschaftliche Lage in einem Land wurde auf das Bruttoinlandsprodukt (BIP) pro Einwohner (engl. **Gross domestic product per capita**) zurückgegriffen. Das BIP ist das wichtigste gesamtwirtschaftliche Produktionsmaß und stellt den Wert aller Güter und Dienstleistungen dar, die in einem Jahr innerhalb der Landesgrenzen einer Volkswirtschaft erwirtschaftet wurde. Die Kaufkraftparität (engl. *purchasing power parity, PPP*) dient dazu, Wechselkursschwankungen zu berücksichtigen.
+Für die Beschreibung der Ungleichheit in einem Land wurde der **Coefficient of Human Inequality** herangezogen. Diese künstlich berechnete Kennzahl setzt sich aus den Ungleichheiten in den Bereichen *Gesundheit*, *Bildung* und *Einkommen* zusammen. Als Kennzahl für die wirtschaftliche Lage in einem Land wurde auf das Bruttoinlandsprodukt (BIP) pro Einwohner (engl. **Gross domestic product per capita**) zurückgegriffen.[^fn2] Das BIP ist das wichtigste gesamtwirtschaftliche Produktionsmaß und stellt den Wert aller Güter und Dienstleistungen dar, die in einem Jahr innerhalb der Landesgrenzen einer Volkswirtschaft erwirtschaftet wurde.[^fn3] Die Kaufkraftparität (engl. *purchasing power parity, PPP*) dient dazu, Wechselkursschwankungen zu berücksichtigen. [^fn4] [^fn5]
 
-[//]: # (TODO Gross domestic product (GDP) per capita (2011 PPP $))
+
+[^fn2]: [Bruttoinlandsprodukt (BIP) pro Kopf](http://www.bpb.de/wissen/72UZFD,0,0,Bruttoinlandsprodukt_(BIP)_pro_Kopf.html)
+[^fn3]: [Bruttoinlandsprodukt (BIP)](http://www.bpb.de/nachschlagen/zahlen-und-fakten/europa/70543/bruttoinlandsprodukt-bip)
+[^fn4]: [About Human Development](http://hdr.undp.org/en/humandev)
+[^fn5]: [Understanding the data](http://hdr.undp.org/en/statistics/understanding)
+
+
+
 
 
 ### Datenanalyse <a name="datenanalyse"/>
 
 Zu Beginn der Analyse wurden die Daten für *Coefficient of Human Inequality* und *Gross domestic product (GDP) per capita* aus den CSV-Dateien auf Auffälligkeiten exploriert. Erste Auffälligkeit war das ungünstige Format der Daten. Die Daten der einzelnen Länder waren nach Komma als Trennungszeichen separiert. Für die erste Analyse wurde das Format angepasst und eine Trennung nach Spalten vorgenommen. Im neuen Format wurde festgestellt, dass leere Spalten zwischen den Jahren existierten.
 Beim Vergleich beider Datensätze für *Coefficient of Human Inequality* und *Gross domestic product (GDP) per capita* ist aufgefallen, dass die Zeiträume abweichen. Für den Datensatz *Gross domestic product (GDP) per capita* lagen Daten für die Jahre zwischen 1990 und 2017 vor, während beim *Coefficient of Human Inequality* nur die Daten zwischen den Jahren 2010 und 2017 vorhanden waren.
-Eine weitere Erkenntnis aus der Datenanalyse war die Präsenz einiger leerer Felder. Nicht für alle Jahre und für alle Länder lagen Daten vollständig vor. Nach dem Abgleich dieser Datensätze mit den [ISO-Ländercodes](https://www.iso.org/iso-3166-country-codes.html){:target="_blank"} wurde ebenso eine Differenz bei der Anzahl der Länder festgestellt. 
+Eine weitere Erkenntnis aus der Datenanalyse war die Präsenz einiger leerer Felder. Nicht für alle Jahre und für alle Länder lagen Daten vollständig vor. 
+
+
+TODO
+Nach dem Abgleich dieser Datensätze mit den [ISO-Ländercodes](https://www.iso.org/iso-3166-country-codes.html){:target="_blank"} wurde ebenso eine Differenz bei der Anzahl der Länder festgestellt. 
 Für eine erste Darstellung der Daten wurden die Datensätze mittels [Tableau](https://www.tableau.com/de-de){:target="_blank"} visualisiert, um erste inhaltliche Erkenntnisse zu ziehen.
-
-•	Anmerkung: waren es nur Länder? Oder auch souveräne Staaten?
-•	Bild hinzufügen
-
 
 ### Datenaufbereitung <a name="datenaufbereitung"/>
 
 Im ersten Schritt der Datenaufbereitung wurden überflüssige Spalten aus beiden Datensätzen entfernt. Dazu gehörten die leeren Spalten sowie die Spalte „HDI Rank (2017)“, welche für die Visualisierung keine Verwendung fand.
 Aufgrund der Abweichung der Zeiträume und um eine Gegenüberstellung der Daten zu ermöglichen, wurde ein einheitlicher Zeitraum (2010 bis 2017) festgelegt. Dies hatte zur Folge, dass aus dem Datensatz *Gross domestic product (GDP) per capita* die Jahre 1990, 1995, 2000 und 2005 entfernt wurden.
-Für das Problem mit leeren Feldern musste eine Entscheidung getroffen werden. Die zentrale Frage war, ab wann ein Land nicht weiter berücksichtigt werden soll. Entscheidend war wie viele Jahre zur Verfügung stehen. Bei zu wenigen Daten war es nicht mehr möglich, eine zeitliche Entwicklung darzustellen bzw. Erkenntnisse daraus zu ziehen. Aufgrund dessen wurde folgende Regel definiert: Ein Land wird eliminiert, falls keine Jahre oder weniger als vier Jahre auf einem der Datensätze vorliegen. Zusätzlich wurden bei großen Lücken die Randwerte entfernt, da bei der Visualisierung durch ein Liniendiagramm die Ergebnisse verfälscht wären.  
-
-
-<figure>
-  <img src="{{ site.urlimg }}/inequality/south_africa_1.png" />
-  <figcaption>XYZ</figcaption>
-</figure>
-
-<figure>
-  <img src="{{ site.urlimg }}/inequality/south_africa_2.png" />
-  <figcaption>XYZ</figcaption>
-</figure>
+Für das Problem mit leeren Feldern musste eine Entscheidung getroffen werden. Die zentrale Frage war, ab wann ein Land nicht weiter berücksichtigt werden soll. Entscheidend war wie viele Jahre zur Verfügung stehen. Bei zu wenigen Daten war es nicht mehr möglich, eine zeitliche Entwicklung darzustellen bzw. Erkenntnisse daraus zu ziehen. Aufgrund dessen wurde folgende Regel definiert: Ein Land wird aussortiert, falls keine Jahre oder weniger als vier Jahre auf einem der Datensätze vorliegen.   
 
 ###### Aussortierte Länder (aufgrund mangelnder Daten)
 ---
+<div style="color:red">
 
 •	Algeria
 •	Bahamas
@@ -138,12 +138,35 @@ Für das Problem mit leeren Feldern musste eine Entscheidung getroffen werden. D
 •	Sudan
 •	Turkmenistan  
 
+</div>
 ---
 
 <br/>
 
-###### Betrachtete Länder
+Zusätzlich wurden bei großen Lücken (= mehr als 2 fehlenden Jahre) die Randwerte entfernt, da bei der Visualisierung durch ein Liniendiagramm die Ergebnisse verfälscht wären.  
+
+<figure>
+  <img src="{{ site.urlimg }}/inequality/chart_south_africa_unadjusted.png" />
+  <figcaption>Südafrika mit unbereinigten Daten</figcaption>
+</figure>
+<figure style="text-align:center">
+  <img src="{{ site.urlimg }}/inequality/arrow-down.png" width="20" height="4"/>
+</figure>
+<figure>
+  <img src="{{ site.urlimg }}/inequality/chart_south_africa_adjusted.png" />
+  <figcaption>Südafrika mit bereinigten Daten</figcaption>
+</figure>
+
+
+<br/>
+
+Der nächste Schritt bestand im Abgleich der Länder zwischen den Datensätzen *Gross domestic product (GDP) per capita* und *Coefficient of Human Inequality*. Schlussendlich wurden mithilfe von [Tableau Prep](https://www.tableau.com/de-de/products/prep){:target="_blank"} Diskrepanzen identifiziert und bereinigt.    
+
+  
+###### Betrachtete Länder (nach Abgleich)
 ---
+
+<div style="color:green">
 
 •	Afghanistan
 •	Albania
@@ -292,10 +315,9 @@ Für das Problem mit leeren Feldern musste eine Entscheidung getroffen werden. D
 •	Zambia
 •	Zimbabwe
 
----
+</div>
 
-<br/>
-Der nächste Schritt bestand im Abgleich der Länder zwischen den Datensätzen *Gross domestic product (GDP) per capita* und *Coefficient of Human Inequality*. Schlussendlich wurden mithilfe von [Tableau Prep](https://www.tableau.com/de-de/products/prep){:target="_blank"} Diskrepanzen identifiziert und bereinigt. 
+---
 
 
 ## Prototyp <a name="prototyp"/>
@@ -305,31 +327,47 @@ Der nächste Schritt bestand im Abgleich der Länder zwischen den Datensätzen *
 
 ## Fazit <a name="fazit"/>
 
+*Platzhalter*
+
 ### Erkenntnisse <a name="erkenntnisse"/>
 Tatsächlich zeigt sich bei der Mehrheit der Länder weltweit eine positive Entwicklung, was unsere anfängliche Hypothese bestätigt:
   
 "*Steigt die Wirtschaft eines Landes, so sinkt die Ungleichheit in der Bevölkerung; bzw. sie bleibt konstant, wenn diese bereits einen niedrigen Wert aufweist.*"      
 
-TODO: Bild einfügen
+<figure>
+  <img src="{{ site.urlimg }}/inequality/chart_bolivien.png" />
+</figure>
 
-Zudem gibt es auch Beispiele, die den umgekehrten Fall der Korrelation aufweisen, z. B. die Zentralafrikanische Republik: Die Wirtschaft sinkt, wodurch die Ungleichheit steigt.  
+Zudem gibt es auch Beispiele, die den umgekehrten Fall der Korrelation aufweisen, z.B. die Zentralafrikanische Republik: Die Wirtschaft sinkt, wodurch die Ungleichheit steigt.  
+
+<figure>
+  <img src="{{ site.urlimg }}/inequality/chart_central_africa_republic.png" />
+</figure>
+
 Auch zeigen sich in einigen Fällen Ausnahmen, die von der Korrelation abweichen, wie Bulgarien: Trotz wachsender Wirtschaft, steigt die Ungleichheit in der Bevölkerung.  
-TODO: Bilder einfügen für Beispiele im Text
+
+<figure>
+  <img src="{{ site.urlimg }}/inequality/chart_bulgarien.png" />
+</figure>
+
 
 ### Ausblick <a name="ausblick"/>
 
 Ausgehend vom erhaltenen **Feedback auf der iExpo** ergaben sich die folgenden möglichen Verbesserungsvorschläge:
 
-- Suchfunktion zur Auswahl von Länder
-- Durchschnitt für Kontinent
-- Keine blauen Icons auf blauem Hintergrun
-- Höhere Auflösung der Visualisierunge
-- Auswahl von max. 2 Länder
+- Suchfunktion zur Auswahl von Ländern
+- Durchschnittswerte für Kontinente zum Vergleich
+- Keine blauen Icons auf blauem Hintergrund
+- Höhere Auflösung der Visualisierungen
+- Auswahl von max. 2 Ländern
 - Start- und Endpunkt der Animation differenziert darstellen
+  
+<br/>
+<br/>
 
 ## Credits <a name="credits"/>
   
-Das Projekt wurde realisiert von: 
+Das Projekt wurde realisiert durch: 
 
 - Daniel Kogan
 - Moritz Mundhenke
@@ -337,5 +375,5 @@ Das Projekt wurde realisiert von:
 - Stefan Sousa
 - Tim Schäfer
 
-Grundlagen der Informationsvisualisierung (GDV), Wintersemester 2018/2019 bei Prof. Dr. Till Nagel, Hochschule Mannheim
+Grundlagen der Informationsvisualisierung (GDV), Wintersemester 2018/2019 bei Herrn [Prof. Dr. Till Nagel](https://services.informatik.hs-mannheim.de/~nagel/){:target="_blank"}, Hochschule Mannheim
 
