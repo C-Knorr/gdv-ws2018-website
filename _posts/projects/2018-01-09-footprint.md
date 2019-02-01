@@ -89,7 +89,7 @@ Mit der Interaktiontechnik „Mouseover“ wird das ausgewählte Land in alle Vi
 
 **Ökologischer Fußabdruck pro Kopf G20-Staaten**
 
-![](/images/footprint/TreemapCapita.PNG)
+![]({{site.urlimg}}footprint/TreemapCapita.PNG)
 
 Das folgende Code-Fragment beschreibt grob, wie eine Treemap in D3.js generiert wird.
 
