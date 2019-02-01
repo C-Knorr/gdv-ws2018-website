@@ -85,7 +85,7 @@ Mit der Interaktiontechnik „Mouseover“ wird das ausgewählte Land in alle Vi
 
 **Ökologischer Fußabdruck der G20-Staaten**
 
-![](/images/footprint/TreemapperTotal.PNG)
+![]({{site.urlimg}}footprint/footprint/TreemapperTotal.PNG)
 
 **Ökologischer Fußabdruck pro Kopf G20-Staaten**
 
@@ -127,7 +127,7 @@ Nachfolgend findet per `nest()`-Methode eine Verschachtelung innerhalb der Treem
 
 Um die Länder bezüglich deren Reserve/Defizit untereinander zu vergleichen, wurde ein Säulendiagramm benutzt. Dabei wurden die Säulen nach den Werten Reserve/Defizit absteigend sortiert, damit auf einen Blick der Rang bzgl. „gutem Fußabdruck“ der Länder zu erkennen ist. Das Säulendiagramm, das sowohl positive als auch negative Werte darstellt, lässt durch die unterschiedlichen Farben der Säulen (grün für positive und rot für negative Werte) sofort erkennen, ob ein Land eine Reserve oder ein Defizit aufweist. Die Entscheidung, diese Reserven/Defizite der Länder mit dieser Visualisierungstechnik zu realisieren wurde getroffen, da sich ein Rang unter mehreren Objekten sehr gut mit einem Säulendiagramm darstellen lässt. Ob sich diese Visualisierungstechnik für das Abbilden von 20 Werten (G20-Staaten) eignet, musste jedoch erst in Tableau getestet werden, da man befürchtete, dass es zu unübersichtlich werden könnte. Selbstverständlich interagiert das Säulendiagramm mit den anderen Diagrammen auf dem Dashboard, auf dem sie auch vorhanden ist. Eine mögliche Interaktion ist zum Beispiel, dass ein anderes Jahr im Dashboard ausgewählt wird, woraufhin sich das Säulendiagramm direkt anpasst und die Werte des ausgewählten Jahres darstellt. Ebenfalls werden bei einem „Mouseover“ auf einem Land beim Säulendiagramm dasselbe Land auf den anderen Diagrammen des Dashboards mit einer Hervorhebung angezeigt. Dies gilt analog auch im umgekehrten Sinne.
 
-![](/images/footprint/Saulendiagramm.PNG)
+![]({{site.urlimg}}footprint/footprint/Saulendiagramm.PNG)
 
 Anbei kann man sehen, wie anhand der `makeBarChart`-Methode das Säulendiagramm aufgebaut ist.
 
@@ -170,7 +170,7 @@ Durch die begrenzte Zeit konnte die Visualisierung des Linendiagramms nicht umge
 
 
 
-![amChart](/images/footprint/amChart.gif)
+![amChart]({{site.urlimg}}footprint/amChart.gif)
 
 #### Library
 Das Dashboard wurde mit [`JavaScript`](https://www.javascript.com) geschrieben und basiert auf der JavaScript-Laufzeitumgebung [`NodeJS`](https://nodejs.org). Zusätzlich nutzten wir das Framework [`ExpressJS`](https://expressjs.com), um eine statische Website zu erstellen.<br>
@@ -207,7 +207,7 @@ var treemapGreen = container.createChild(am4charts.TreeMap);
     treemapGreen.dataFields.value = "value";
     treemapGreen.dataFields.name = "name";
 ```
-<img src="/images/footprint/treemapGreen.png" alt="" width="300" height="500" />
+<img src="{{site.urlimg}}footprint/treemapGreen.png" alt="" width="300" height="500" />
 
 
 
@@ -231,8 +231,8 @@ var treemapRed = container.createChild(am4charts.TreeMap);
     treemapRed.dataFields.children = "children";
     treemapRed.homeText = "Ecological Footprint";
 ```
-<img src="/images/footprint/treemapWorld.png" alt="" width="300" height="500" />
-<img src="/images/footprint/treemapChina.png" alt="" width="300" height="500" />
+<img src="{{site.urlimg}}footprint/treemapWorld.png" alt="" width="300" height="500" />
+<img src="{{site.urlimg}}footprint/treemapChina.png" alt="" width="300" height="500" />
 
 
 ##### Treemap Text 
@@ -292,7 +292,7 @@ Biocapacity linie
     series.dataFields.dateX = "date";
     series.dataFields.valueY = "Eco";
 ```
-![axes](/images/footprint/selectAxesZoomSelect.png)
+![axes]({{site.urlimg}}footprint/selectAxesZoomSelect.png)
 
 Darstellung und Feature anpassung.
 ```javascript
@@ -316,8 +316,8 @@ Darstellung und Feature anpassung.
     chart.cursor.xAxis = dateAxis;
     chart.scrollbarX = new am4core.Scrollbar();
 ```
-![axes](/images/footprint/zoom.png)
-![axes](/images/footprint/selectAxesZoom.png)
+![axes]({{site.urlimg}}footprint/zoom.png)
+![axes]({{site.urlimg}}footprint/selectAxesZoom.png)
 
 
 ##### [Legende](https://www.amcharts.com/docs/v4/concepts/legend/)
@@ -335,7 +335,7 @@ var marker = chart.legend.markers.template.children.getIndex(0);
     marker.stroke = am4core.color("#ccc");
 ```
 Ein schöner Effekt bei Legenden, dass man es auch als Filter benutzen kann.<br>
-<img src="/images/footprint/axesfilter.png" alt="" width="300" height="500" />
+<img src="{{site.urlimg}}footprint/axesfilter.png" alt="" width="300" height="500" />
 
 
 
@@ -358,7 +358,7 @@ treemapRed.currentlyZoomed.name
 #### Interaction
 Wichtig zu erwähnen ist es hier, dass zuerst die Charts erstellt und mit Daten geladen werden müssen, um eine Startseite anzuzeigen. Ansonsten startet man eine leere Seite und man kann auf nichts klicken. Hier wird mit allen Daten der G20-Ländern gestartet.<br>
 
-![start](/images/footprint/start.png)
+![start]({{site.urlimg}}footprint/start.png)
 
 In der Interaktion stößt man auf das Problem, dass die Klicks entweder zu spät oder zu früh reagieren. Wir haben die `setTimeout()`-Methode verwendet, um das Klickverhalten zu verbessern, weil die dynamische Visualisierung Zeit braucht. Der Name des aktuellen Zustands wird an die Methode für die Daten-Filterung übergeben.
 
