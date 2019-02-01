@@ -191,7 +191,7 @@ container.height = am4core.percent(100);
 #### [Treemap]  <a name="Treemap"/> (https://www.amcharts.com/docs/v4/chart-types/treemap/)
 Wir haben zuerst zwei Treemaps erstellt, wie auf der amchart-Webseite vorgeschrieben, und diese an den Container positioniert.
 
-##### Biocapacity Treemap (treemapGreen)
+##### Biokapazität Treemap <a name="Biokapazität Treemap"/> (treemapGreen)
 In dieser Treemap haben wir einen sogenannten Simple-Treemap erstellt, um die Biokapazität und den Key zu definieren, um diese später an das data.json zu verknüpfen.
 
 ```javascript
@@ -212,7 +212,7 @@ var treemapGreen = container.createChild(am4charts.TreeMap);
 
 
 
-##### Ecological Footprint Treemap (treemapRed)
+##### Ökologischer Fußabdruck Treemap <a name="Ökologischer Fußabdruck Treemap"/> (treemapRed)
 Hier würde eine Drill-Down-Treemap erstellt. Damit kann man auf ein Land klicken, um die dazugehörigen Children-Daten anzugzeigen. Die Children-Daten stellen hier die spezifischen Daten eines Landes dar. Beim Klicken auf ein Land werden die spezifischen Daten dargestellt.
 
 ```javascript
@@ -235,7 +235,7 @@ var treemapRed = container.createChild(am4charts.TreeMap);
 <img src="{{site.urlimg}}footprint/treemapChina.png" alt="" width="300" height="500" />
 
 
-##### Treemap Text 
+##### Treemap Text <a name="Treemap Text"/>
 Dieser Code ist für die Treemaps, um die einzelnen Ebenen mit Text und Mausverhalten darzustellen.
 Bsp. <br/>
 Erste  ebene  = var level0SeriesTemplate<br/>
@@ -254,7 +254,7 @@ treemap.navigationBar = new am4charts.NavigationBar();
     bullet0.label.text = "{name}";
     bullet0.label.fill = am4core.color("#ffffff");
 ```
-#####  Treemap hover methoden
+#####  Treemap hover methoden <a name="Treemap hover methoden"/>
 Dieser Code ist für den Schwebeeffekt über die Treemaps zuständig. Hier war es aus zeitlichen Gründen nicht möglich, dass sich das Verhalten bei beiden Treemaps gleich ist. Geplant war, dass wenn man auf der Treemap auf ein Land mit den Mauszeiger druber schwebt, dass das jeweilige Land auf der anderen Treemap gleichesmaßen hervorgeboen wird.
 ```javascript
     // ein hover erstellen
@@ -264,7 +264,7 @@ Dieser Code ist für den Schwebeeffekt über die Treemaps zuständig. Hier war e
         return am4core.color(am4core.colors.brighten(fill.rgb, -0.2));
     });
 ```
-#### [XYChart](https://www.amcharts.com/docs/v4/chart-types/xy-chart/)
+#### [XYChart] <a name="XYChart"/> (https://www.amcharts.com/docs/v4/chart-types/xy-chart/)
 Dieser Chart ist etwas übersichtlicher als das Treemap und ist besser dokumentiert.
 ```javascript
     var chart = container.createChild(am4charts.XYChart);
@@ -276,7 +276,7 @@ Dieser Chart ist etwas übersichtlicher als das Treemap und ist besser dokumenti
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis.tooltip.disabled = true;
 ```
-##### [series](https://www.amcharts.com/docs/v4/concepts/series/)
+##### [series] <a name="series"/> (https://www.amcharts.com/docs/v4/concepts/series/)
 Hier wird das Verlauf der Zeitlinie erstellt.<br>
 <br>
 Biocapacity linie
@@ -320,7 +320,7 @@ Darstellung und Feature anpassung.
 ![axes]({{site.urlimg}}footprint/selectAxesZoom.png)
 
 
-##### [Legende](https://www.amcharts.com/docs/v4/concepts/legend/)
+##### [Legende] <a name="Legende"/> (https://www.amcharts.com/docs/v4/concepts/legend/)
 Die Legende funktioniert nur bei Simple-Treemap und XYChart. Bei der Drill-Down Treemap kam es zu einigen UI-Fehlern. Es wurde nur in dem XYChart verwendet, da es in der Treemap nicht notwendig ist.
 ```javascript
 //zeige legende
@@ -339,7 +339,7 @@ Ein schöner Effekt bei Legenden, dass man es auch als Filter benutzen kann.<br>
 
 
 
-#### [Events](https://www.amcharts.com/docs/v4/concepts/event-listeners/)
+#### [Events] <a name="Events"/> (https://www.amcharts.com/docs/v4/concepts/event-listeners/)
 Wir haben leider sehr wenige interaktive Funktionen für unseren Treemaps gefunden. In Chrome-Debugger haben wir eine Methode gefunden, die den Namen des Zustandes liefert, welche momentan anzeigt wird.
 
 ```
@@ -355,7 +355,7 @@ treemapRed.events.on("hit", function (ev) {
 treemapRed.currentlyZoomed.name
 }, this);
 ```
-#### Interaction
+#### Interaction <a name="Interaction"/>
 Wichtig zu erwähnen ist es hier, dass zuerst die Charts erstellt und mit Daten geladen werden müssen, um eine Startseite anzuzeigen. Ansonsten startet man eine leere Seite und man kann auf nichts klicken. Hier wird mit allen Daten der G20-Ländern gestartet.<br>
 
 ![start]({{site.urlimg}}footprint/start.png)
@@ -374,16 +374,16 @@ treemapRed.events.on("hit", function (ev) {
 }, this);
 ```
 
-### Vergleich der Framworks amCharts und D3.js
+### Vergleich der Framworks amCharts und D3.js <a name="Vergleich der Framworks amCharts und D3.js"/>
 Beim Arbeiten mit den beiden Frameworks fiel uns auf, dass sich mit amCharts deutlich leichter unterschiedliche Charts erstellen lassen. Zwar ist die Auswahl an Charts in amChart deutlich bschränkter als in D3.js, für unsere Zwecke hätte es allerdings gereicht. Allerdings war es uns nicht möglich, unsere Vorstellungen bzgl. der Interaktion der Treemaps, wie z.B. komplexeres Hovern einzelner Elemente, umzusetzen. Zudem gestaltete es sich als schwierig, die proportionalen Unterschiede zwischen den Treemaps deutlicher darzustellen. Dieses Problem hatten wir mit D3.js nicht. Allgemein lässt sich festhalten, dass mit D3.js deutlich besser Visualisierungen umsetzen lassen, jedoch bedarf es einiges an Einarbeitungszeit sich mit dem Framework vertraut zu machen.
 
 
-## Erkenntnisse
+## Erkenntnisse <a name="Erkenntnisse"/>
 Unsere anfangs aufgestellte Hypothese, dass es erhebliche Unterschiede zwischen der absoluten- und der Pro-Kopf-Ansicht gibt, konnte bestätigt werden. 
 Während im Jahr 2014 in der absoluten Ansicht China bei weitem den höchsten ökologischen Fußabdruck aller G20-Staaten aufweist, führen bei den Pro-Kopf-Werten die Vereinigten Staaten, dicht gefolgt von Kanada. 
 Bei der Biokapazität ergibt sich ebenfalls ein neues Bild. Bei Ansicht der absoluten Werte führt Brasilien vor China. Da Brasilien aber mit seinen knapp 210 Millionen Einwohnern ein sehr bevölkerungsreiches Land ist, liegt es in der Pro-Kopf-Ansicht lediglich auf dem dritten Platz. Hier führt Kanada, gefolgt von Australien auf einem zweiten Rang. Des Weiteren lässt sich außerdem festhalten, dass China als vermeintlich größter Umweltverschmutzer bei der Pro Kopf-Ansicht zwar immer noch eine negative Bilanz aufweist, allerdings weisen fünf G20-Länder eine deutlich schlechtere Bilanz auf.
 
-## Fazit
+## Fazit <a name="Fazit"/>
 Im Gegensatz zu allgemein üblichen Herangehensweise, lediglich die einzelnen Länder als Ganzes danach zu beurteilen, wie sehr sie zur allgemeinen Umweltverschmutzung beitragen, wollten wir herausfinden, ob sich etwas an dem Bild der größten Umweltverschmutzer ändert, wenn man die Bevölkerungsanzahl der untersuchten Länder berücksichtigt. 
 Dabei war es zunächst schwierig einen einheitlichen Datensatz zu finden. Die zu Verfügung stehenden Datensätze mussten letztlich angepasst werden, um unserem Vorhaben zu entsprechen. Zudem musste unsere ursprünglich aufgestellte Hypothese dem Datensatz angepasst werden, da der dieser nicht alle Elemente für unsere Hypothese enthielt.
 Durch anfängliche Schwierigkeiten bei der Suche nach einem geeigneten Datensatz, hatten wir anfangs auch Schwierigkeiten mit dem Aufstellen einer Hypothese. Dieser Prozess nahm deutlich mehr Zeit in Anspruch als ursprünglich geplant, weshalb wir auf einige Features bei der Interaktion verzichten mussten.
