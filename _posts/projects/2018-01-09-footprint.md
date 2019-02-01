@@ -7,7 +7,7 @@ categories:
     - projects
 image:
     title: footprint\Ohne_Auswahl_Total.PNG
-    caption: Poster
+    caption: Ökologischer Fußabdruck
 author: Yavuz Azal, Arif Bozkurt, Benedikt Herbst, Vu Tuananh, Thaer Aldefai 
 ---
 
