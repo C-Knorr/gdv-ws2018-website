@@ -388,3 +388,15 @@ Im Gegensatz zu allgemein üblichen Herangehensweise, lediglich die einzelnen L�
 Dabei war es zunächst schwierig einen einheitlichen Datensatz zu finden. Die zu Verfügung stehenden Datensätze mussten letztlich angepasst werden, um unserem Vorhaben zu entsprechen. Zudem musste unsere ursprünglich aufgestellte Hypothese dem Datensatz angepasst werden, da der dieser nicht alle Elemente für unsere Hypothese enthielt.
 Durch anfängliche Schwierigkeiten bei der Suche nach einem geeigneten Datensatz, hatten wir anfangs auch Schwierigkeiten mit dem Aufstellen einer Hypothese. Dieser Prozess nahm deutlich mehr Zeit in Anspruch als ursprünglich geplant, weshalb wir auf einige Features bei der Interaktion verzichten mussten.
 Ferner stellte sich das Arbeiten mit dem zuvor gewählten Framework als problematisch heraus. Mit dem anfänglich gewählten JavaScript-Framework amCharts waren wir nicht im Stande unsere zuvor geplanten Interaktionen umzusetzen. Aus diesem Grund stiegen wir auf die JavaScript-Bibliothek D3.js um. Dadurch entstand zwar ein zusätzlicher Aufwand bzgl. der Einarbeitung, allerdings konnten wir unsere geplanten Interaktionen deutlich besser umsetzen.
+
+## Credits <a name="credits"/>
+  
+Das Projekt wurde realisiert durch: 
+
+- Yavuz Azal
+- Arif Bozkurt
+- Benedikt Herbst
+- Vu Tuananh
+- Thaer Aldefai 
+
+Grundlagen der Informationsvisualisierung (GDV), Wintersemester 2018/2019 bei Herrn [Prof. Dr. Till Nagel](https://services.informatik.hs-mannheim.de/~nagel/){:target="_blank"}, Hochschule Mannheim
