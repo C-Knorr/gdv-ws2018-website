@@ -1,6 +1,7 @@
 ---
 layout: page
-title:  "Der Ökologischer Fußabdruck der G20-Staaten"
+title:  "Ökologischer Fußabdruck der G20"
+subheadline: Vergleich des ökologischen Fußabdrucks und der Biokapazität ausgewählter Staaten
 header: no
 show_meta: false
 categories:
@@ -8,11 +9,11 @@ categories:
 image:
     title: footprint\Ohne_Auswahl_Total.PNG
     caption: Ökologischer Fußabdruck
-author: Yavuz Azal, Arif Bozkurt, Benedikt Herbst, Vu Tuananh, Thaer Aldefai 
+author: Yavuz Azal, Arif Bozkurt, Benedikt Herbst, Vu Tuananh, Thaer Aldefai
 ---
 
 ## Abstract
-Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen wir, dass diese Resourcen der Erde endlich sind. Mittleweile verbauchen wir Menschn mehr Resourcen, als auf der Erde vorhanden sind. Dieser Verbrauch wird auch als ökologischer Fußabdruck bezeichnet. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten.
+Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen wir, dass diese Resourcen der Erde endlich sind. Mittleweile verbauchen wir Menschen mehr Resourcen, als auf der Erde vorhanden sind. Dieser Verbrauch wird auch als ökologischer Fußabdruck bezeichnet. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten.
 
 ## Inhalt
 1. [Einführung](#Einführung)
@@ -45,16 +46,16 @@ Jeden Tag verbrauchen wir Resourcen der Erde und erzeugen Müll. Dabei vergessen
 8. [Fazit](#Fazit)
 
 ## Einführung <a name="Einführung"/>
-In diesem Semester wurden als Thema die Sustainable Development Goals der UN behandelt. 
-Diese beinhalten 17 Ziele zur nachhaltigen Entwicklung, die von den Vereinten Nationen erreicht werden sollen. 
-Die Ziele sollen bei der Sicherung einer nachhaltigen Entwicklung auf ökonomischer, sozialer sowie ökologischer Ebene behilflich sein. Im Rahmen der Lehrveranstaltung Grundlagen der Datenvisualisierung, die von Prof. Dr. Till Nagel an der Hochschule Mannheim gehalten wurde, fand ein Visualisierungsprojekt statt. In diesem Projekt konzentrierten wir uns auf den ökologischen Fußabdruck, welches mehrere Sustainable Development Goals beninhaltete. Für die Visualisierung wurden die Daten der G20-Staaten herangezogen. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten. Die Differenz zwischen der Biokapazität und dem ökologischen Fußabdruck ergibt bei einem positiven Wert eine Reserve und bei einem negativen Wert ein Defizit. 
+In diesem Semester wurden als Thema die Sustainable Development Goals der UN behandelt.
+Diese beinhalten 17 Ziele zur nachhaltigen Entwicklung, die von den Vereinten Nationen erreicht werden sollen.
+Die Ziele sollen bei der Sicherung einer nachhaltigen Entwicklung auf ökonomischer, sozialer sowie ökologischer Ebene behilflich sein. Im Rahmen der Lehrveranstaltung Grundlagen der Datenvisualisierung, die von Prof. Dr. Till Nagel an der Hochschule Mannheim gehalten wurde, fand ein Visualisierungsprojekt statt. In diesem Projekt konzentrierten wir uns auf den ökologischen Fußabdruck, welches mehrere Sustainable Development Goals beninhaltete. Für die Visualisierung wurden die Daten der G20-Staaten herangezogen. Der ökologischer Fußabdruck ist eine Metrik, mit der erfasst werden kann, wie viel Biokapazität vorhanden ist und wie diese genutzt wird, um unseren Lebensstandard aufrechtzuerhalten. Die Differenz zwischen der Biokapazität und dem ökologischen Fußabdruck ergibt bei einem positiven Wert eine Reserve und bei einem negativen Wert ein Defizit.
 
 ## These <a name="These"/>
 Ein hoher ökologischer Fußabdruck eines Landes besagt nicht, dass der ökologische Fußabdruck pro Kopf des jeweiligen Landes ebenfalls hoch sein muss.
 
 ## Daten <a name="Daten"/>
-### Datenquelle <a name="Datenquelle"/> 
-Das Global Footprint Network stellt Daten zum ökologischen Fußabdruck zur Verfügung (  <https://www.footprintnetwork.org/>). Es basiert auf einer einfachen, unkomplizierten Abrechnung. Die erhobenen Daten werden von der UN von 1961 bis 2014 zur verfügung gestellt und sind als CSV-Datei frei verfügabar. 
+### Datenquelle <a name="Datenquelle"/>
+Das Global Footprint Network stellt Daten zum ökologischen Fußabdruck zur Verfügung (  <https://www.footprintnetwork.org/>). Es basiert auf einer einfachen, unkomplizierten Abrechnung. Die erhobenen Daten werden von der UN von 1961 bis 2014 zur verfügung gestellt und sind als CSV-Datei frei verfügabar.
 
 ### Datenerhebung <a name="Datenerhebung"/>
 Für das Projekt wurden die G20-Staaten berücksichtigt. Diese sind in der Datenbank des "Footprintnetwork" detailliert vorhanden. Es bestand keine Herausforderung bei der Beschaffung der Daten, weil diese frei zugänglich sind. Die benötigten Daten wurden seperat heruntergeladen, weil diese nicht aggregiert vorhanden waren. Die vorhandenen Daten setzen sich aus folgenden Informationen zusammen: Biokapazität (die im Ökosystem vorhandene Ressourcen, die wir benötigen, um unser Lebensstand aufrecht zu erhalten), ökologischen Fußabdruck (Verbrauch der natürlichen Ressourcenn im ökosystem), Built-Up-Land (benötigte Fläche für Infrastruktur), Carbon (Aufnahme von CO-Emission), Forest Products (Verbrauch Bauholz), Fishing Grounds (Fang und Verbrauch von Fisch), Cropland (Getreidekapazität) und Grazing Land (Weidevieh- und Fleischverbrauch). Die Daten sind jeweils für ein ganzes Land und für Einwohner eines Landes vorhanden.
@@ -80,8 +81,8 @@ Anfangs hatten wir uns für die JavaScript-Bibliothek amCharts entschieden. Mit 
 Anhand der eingespeisten JSON-Datei, die sämtliche relevanten Daten für den totalen Vergleich und den Pro-Kopf-Vergleich enthält, visualisierten wir die Werte für den ökologischen Fußabdruck so, dass diese entsprechend ihrer prozentualen Werte auf den beiden Treemaps dargestellt wurden. So wird bspw. China in der totalen Ansicht als Land mit dem größten ökologischen Fußabdruck auch das größte Rechteck in der Treemap zuteil.
 
 #### Treemap <a name="Treemap"/>
-Für die Darstellung des ökologischen Fußabdrucks und der Biokapazität wurden zwei verschachtelte Treemaps benutzt. Eine Treemap dient der Visualisierung von hierarchischen Strukturen, die hierbei durch ineinander verschachtelte Rechtecke dargestellt werden. Damit können Größenverhältnisse veranschaulicht werden, indem die Flächen der Rechtecke proportional zur Größe der darzustellenden Werte gewählt werden. Für den optischen Vergleich unter den Werten der beiden Treemaps wurden diese dynamisch anhand der Größe angepasst. Damit lassen sich Rechtecke der oberen Treemap mit den Rechtecken der unteren Treemap optisch vergleichen. Dies wurde realisiert, indem die Treemap, die als Summe seiner dargestellten Werte kleiner ist als die andere Treemap, proportional zu den Werten mit der Größe seiner Fläche angepasst wird. Diese Funktion bietet neben dem optischen Vergleich unter den Treemaps auch die schnelle Übersicht darüber, ob bei den vergleichenden Werten eine Reserve oder ein Defizit besteht. In den ersten Ebenen der Treemaps werden alle G20-Staaten mit ihren absoluten Werten bzgl. Fußabdruck und Biokapazität abgebildet. In der oberen Treemap wird der ökologische Fußabdruck der G20-Staaten, entweder im Gesamtverbrauch oder als Pro-Kopf-Einheit dargestellt. In der unteren Treemap wird analog dazu die vorhandene Biokapazität dargestellt. Die zweite Ebene ist durch ein Klick-Event zu erreichen, welches die Zusammensetzung der Indikatoren für den Fußabdruck (in der oberen Treemap) und der Biokapazität (in der unteren Treemap) des jeweiligen Staates in der Treemap darstellt. 
-Mit der Interaktiontechnik „Mouseover“ wird das ausgewählte Land in alle Visualisierungen im Dashboard hervorgehoben. 
+Für die Darstellung des ökologischen Fußabdrucks und der Biokapazität wurden zwei verschachtelte Treemaps benutzt. Eine Treemap dient der Visualisierung von hierarchischen Strukturen, die hierbei durch ineinander verschachtelte Rechtecke dargestellt werden. Damit können Größenverhältnisse veranschaulicht werden, indem die Flächen der Rechtecke proportional zur Größe der darzustellenden Werte gewählt werden. Für den optischen Vergleich unter den Werten der beiden Treemaps wurden diese dynamisch anhand der Größe angepasst. Damit lassen sich Rechtecke der oberen Treemap mit den Rechtecken der unteren Treemap optisch vergleichen. Dies wurde realisiert, indem die Treemap, die als Summe seiner dargestellten Werte kleiner ist als die andere Treemap, proportional zu den Werten mit der Größe seiner Fläche angepasst wird. Diese Funktion bietet neben dem optischen Vergleich unter den Treemaps auch die schnelle Übersicht darüber, ob bei den vergleichenden Werten eine Reserve oder ein Defizit besteht. In den ersten Ebenen der Treemaps werden alle G20-Staaten mit ihren absoluten Werten bzgl. Fußabdruck und Biokapazität abgebildet. In der oberen Treemap wird der ökologische Fußabdruck der G20-Staaten, entweder im Gesamtverbrauch oder als Pro-Kopf-Einheit dargestellt. In der unteren Treemap wird analog dazu die vorhandene Biokapazität dargestellt. Die zweite Ebene ist durch ein Klick-Event zu erreichen, welches die Zusammensetzung der Indikatoren für den Fußabdruck (in der oberen Treemap) und der Biokapazität (in der unteren Treemap) des jeweiligen Staates in der Treemap darstellt.
+Mit der Interaktiontechnik „Mouseover“ wird das ausgewählte Land in alle Visualisierungen im Dashboard hervorgehoben.
 
 **Ökologischer Fußabdruck der G20-Staaten**
 
@@ -120,7 +121,7 @@ Nachfolgend findet per `nest()`-Methode eine Verschachtelung innerhalb der Treem
       ]
       })
       .entries(rawdata);
-    
+
 ```
 
 #### Säulendiagramm <a name="Säulendiagramm"/>
@@ -137,7 +138,7 @@ function makeBarChart(path, capitaDef, year){
 
   d3.json("./data/Defizit.json", function(error, rawdata) {
     if (error) throw error;
-  
+
     // format the data
     var data = []
     for(var i in rawdata){
@@ -145,7 +146,7 @@ function makeBarChart(path, capitaDef, year){
           data.push({name: rawdata[i]["Country Name"], value: rawdata[i][capitaDef]})
           }
       }
-  
+
     data = data.sort(function(a, b){return parseFloat(b.value) - parseFloat(a.value)});
 .
 .
@@ -154,7 +155,7 @@ function makeBarChart(path, capitaDef, year){
 ```
 
 #### Linendiagramm <a name="Linendiagramm"/>
-Durch die begrenzte Zeit konnte die Visualisierung des Linendiagramms nicht umgesetzt werden. Das Liniendiagramm ist als Konzept dargestellt. Für die Veranschaulichung der zeitlichen Entwicklung des ökologischen Fußabdrucks und der Biokapazität eines Staates wurde ein Liniendiagramm verwendet. Hier ist zu erkennen, wie sich diese Werte von 1961 bis 2014 entwickelt haben. Die Farben der Linien wurden dabei den Farben aus den Treemaps (Fußabdruck=rot & Biokapazität=grün) angepasst. Dadurch ist auf einem Blick zu erkennen, ob und zu welchem Zeitpunkt die Linie des Fußabdrucks über oder unter der Linie der Biokapazität ist, wodurch abzuleiten ist, ob eine Reserve oder ein Defizit besteht. 
+Durch die begrenzte Zeit konnte die Visualisierung des Linendiagramms nicht umgesetzt werden. Das Liniendiagramm ist als Konzept dargestellt. Für die Veranschaulichung der zeitlichen Entwicklung des ökologischen Fußabdrucks und der Biokapazität eines Staates wurde ein Liniendiagramm verwendet. Hier ist zu erkennen, wie sich diese Werte von 1961 bis 2014 entwickelt haben. Die Farben der Linien wurden dabei den Farben aus den Treemaps (Fußabdruck=rot & Biokapazität=grün) angepasst. Dadurch ist auf einem Blick zu erkennen, ob und zu welchem Zeitpunkt die Linie des Fußabdrucks über oder unter der Linie der Biokapazität ist, wodurch abzuleiten ist, ob eine Reserve oder ein Defizit besteht.
 
 ### Visualisierung mit amChart <a name="Visualisierung mit amChart"/>
 [Amcharts V4](https://www.amcharts.com/docs/v4/) ist die aktuellste Version von amChart. Diese Version unterstütz die Interaktionen zwischen den Charts. Mit Hilfe der Dokumentationen hat man ein Überblick über die Möglichkeiten, um die Charts zu bauen, verändern oder anzupassen. Auch die Demos und die Beispiele auf der Webseite von amChart waren sehr hilfreich um unser Dashboard zu bauen. Da Version 4 von amChart relativ neu und nicht so bekannt ist und sich deutlich von den vorherigen Versionen unterscheidet, haben wir uns dafür entschieden, die einzelnen Elemente der Webseite genauer per Code-Fragmente zu erläutern. Zudem werden die Charakteristika des Frameworks amChart untersucht und per Ampel-Prinzip bewertet.
@@ -177,13 +178,13 @@ Das Dashboard wurde mit [`JavaScript`](https://www.javascript.com) geschrieben u
 Alle Daten waren in ein JSON-Objekt namens data.json gespeichert. Problematisch war es, dieses JSON-Objekt anzubinden bzw. zu filtern. Es war zeitaufwendig herauszufinden, wie man die data.json filtert, um diese an den Charts anzubinden, da die data.json sehr groß und komplex war.<br>
 Die Library [`lodash`](https://lodash.com) bietet einige Hilfsfunktionen, um die data.json zu filtern. Es war am Ende mehr Filter-Code (<span style="color:gray">260 Liniecode</span>) als Dashboard-Code (<span style="color:gray">180 Liniecode</span>). Es wäre einfacher, für jedes Chart eine separate JSON-Datei mit den jeweiligen Daten zu haben.
 
-#### container <a name="container"/> 
+#### container <a name="container"/>
 Es empfehlt sich ein amChart-Container zu erstellen, um alle Charts zu erstellen und eine Dashboard-Sicht zu generieren, damit eine bessere Übersicht für die Interaktion zwischen den Charts dargestellt werden kann. Änderungen in HTML oder CSS, um das Dashboard anzupassen bzw. zu ändern, sind nicht mehr notwendig. <br>
 Die Treemaps sind unterschiedlich groß, weil diese sich an den Zahlen sich orientieren. Je größer die Zahlen, desto größer die Treemap.
 
 
 ```javascript
-var container = am4core.create("chartdiv", am4core.Container); 
+var container = am4core.create("chartdiv", am4core.Container);
 container.width = am4core.percent(100);
 container.height = am4core.percent(100);
 ```
@@ -212,7 +213,7 @@ var treemapGreen = container.createChild(am4charts.TreeMap);
 
 
 
-##### Ökologischer Fußabdruck Treemap <a name="Ökologischer Fußabdruck Treemap"/> 
+##### Ökologischer Fußabdruck Treemap <a name="Ökologischer Fußabdruck Treemap"/>
 Hier würde eine Drill-Down-Treemap erstellt. Damit kann man auf ein Land klicken, um die dazugehörigen Children-Daten anzugzeigen. Die Children-Daten stellen hier die spezifischen Daten eines Landes dar. Beim Klicken auf ein Land werden die spezifischen Daten dargestellt.
 
 ```javascript
@@ -307,7 +308,7 @@ Darstellung und Feature anpassung.
 // info text setzten
     series.tooltipText = "Bio: {valueY.value}";
 
-// farbe 
+// farbe
     series.fill = am4core.color("#228B22");
     series.fillOpacity = 0.3;
 
@@ -379,12 +380,12 @@ Beim Arbeiten mit den beiden Frameworks fiel uns auf, dass sich mit amCharts deu
 
 
 ## Erkenntnisse <a name="Erkenntnisse"/>
-Unsere anfangs aufgestellte Hypothese, dass es erhebliche Unterschiede zwischen der absoluten- und der Pro-Kopf-Ansicht gibt, konnte bestätigt werden. 
-Während im Jahr 2014 in der absoluten Ansicht China bei weitem den höchsten ökologischen Fußabdruck aller G20-Staaten aufweist, führen bei den Pro-Kopf-Werten die Vereinigten Staaten, dicht gefolgt von Kanada. 
+Unsere anfangs aufgestellte Hypothese, dass es erhebliche Unterschiede zwischen der absoluten- und der Pro-Kopf-Ansicht gibt, konnte bestätigt werden.
+Während im Jahr 2014 in der absoluten Ansicht China bei weitem den höchsten ökologischen Fußabdruck aller G20-Staaten aufweist, führen bei den Pro-Kopf-Werten die Vereinigten Staaten, dicht gefolgt von Kanada.
 Bei der Biokapazität ergibt sich ebenfalls ein neues Bild. Bei Ansicht der absoluten Werte führt Brasilien vor China. Da Brasilien aber mit seinen knapp 210 Millionen Einwohnern ein sehr bevölkerungsreiches Land ist, liegt es in der Pro-Kopf-Ansicht lediglich auf dem dritten Platz. Hier führt Kanada, gefolgt von Australien auf einem zweiten Rang. Des Weiteren lässt sich außerdem festhalten, dass China als vermeintlich größter Umweltverschmutzer bei der Pro Kopf-Ansicht zwar immer noch eine negative Bilanz aufweist, allerdings weisen fünf G20-Länder eine deutlich schlechtere Bilanz auf.
 
 ## Fazit <a name="Fazit"/>
-Im Gegensatz zu allgemein üblichen Herangehensweise, lediglich die einzelnen Länder als Ganzes danach zu beurteilen, wie sehr sie zur allgemeinen Umweltverschmutzung beitragen, wollten wir herausfinden, ob sich etwas an dem Bild der größten Umweltverschmutzer ändert, wenn man die Bevölkerungsanzahl der untersuchten Länder berücksichtigt. 
+Im Gegensatz zu allgemein üblichen Herangehensweise, lediglich die einzelnen Länder als Ganzes danach zu beurteilen, wie sehr sie zur allgemeinen Umweltverschmutzung beitragen, wollten wir herausfinden, ob sich etwas an dem Bild der größten Umweltverschmutzer ändert, wenn man die Bevölkerungsanzahl der untersuchten Länder berücksichtigt.
 Dabei war es zunächst schwierig einen einheitlichen Datensatz zu finden. Die zu Verfügung stehenden Datensätze mussten letztlich angepasst werden, um unserem Vorhaben zu entsprechen. Zudem musste unsere ursprünglich aufgestellte Hypothese dem Datensatz angepasst werden, da der dieser nicht alle Elemente für unsere Hypothese enthielt.
 Durch anfängliche Schwierigkeiten bei der Suche nach einem geeigneten Datensatz, hatten wir anfangs auch Schwierigkeiten mit dem Aufstellen einer Hypothese. Dieser Prozess nahm deutlich mehr Zeit in Anspruch als ursprünglich geplant, weshalb wir auf einige Features bei der Interaktion verzichten mussten.
 Ferner stellte sich das Arbeiten mit dem zuvor gewählten Framework als problematisch heraus. Mit dem anfänglich gewählten JavaScript-Framework amCharts waren wir nicht im Stande unsere zuvor geplanten Interaktionen umzusetzen. Aus diesem Grund stiegen wir auf die JavaScript-Bibliothek D3.js um. Dadurch entstand zwar ein zusätzlicher Aufwand bzgl. der Einarbeitung, allerdings konnten wir unsere geplanten Interaktionen deutlich besser umsetzen.
