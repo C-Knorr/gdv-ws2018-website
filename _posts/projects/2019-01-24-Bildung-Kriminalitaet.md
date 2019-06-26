@@ -10,7 +10,7 @@ categories:
 image:
     title: gallery/Webanwendung.png
     caption: "Unsere Webanwendung"
-author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
+author: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat und Ahmed Warsame
 
 ---
 ## Abstract
@@ -222,6 +222,6 @@ Ebenso vermuten wir, dass Investitionen in Bildung keine erkennbaren Auswirkunge
 
 ###### Credits
 
-- Studenten: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat Ayaydin und Ahmed Warsame
+- Studenten: Patrick Hentschel, Daniel Eggert, Dario Capuana, Ferhat und Ahmed Warsame
 - Kurs: Grundlagen der Datenvisualiserung Wintersemester 2018/2019
 - Dozent: Prof. Dr. Till Nagel, Hochschule Mannheim
